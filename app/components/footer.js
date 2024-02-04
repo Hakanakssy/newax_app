@@ -4,24 +4,6 @@ import logo from "../../public/Images/newax_black.png";
 
 
 const Footer = () => {
-    const footerNavs = [
-        {
-            href: './',
-            name: 'Anasayfa'
-        },
-        {
-            href: './hakkimizda',
-            name: 'Hakkımızda'
-        },
-        {
-            href: './ekatalog',
-            name: 'E-Katalog'
-        },
-        {
-            href: './iletisim',
-            name: 'İletişim'
-        }
-    ]
     return (
         <footer className="pt-10">
             <div className="max-w-full mx-auto px-4 text-gray-600 md:px-8">
@@ -32,15 +14,12 @@ const Footer = () => {
                             Estetik ve Dayanıklılığın Mükemmel Buluşması: Newax, Evlerinize Özel Dokunuşlar Yaratır!
                         </p>
                         <ul className="flex flex-wrap  gap-4 text-sm sm:text-base">
-                            {
-                                footerNavs.map((item, idx) => (
-                                    <li className="text-gray-800 hover:text-gray-500 duration-150">
-                                        <a key={idx} href={item.href}>
-                                            {item.name}
-                                        </a>
-                                    </li>
-                                ))
-                            }
+                            <li className="text-gray-800 hover:text-gray-500 duration-150"> <a href="./">Anasayfa</a> </li>
+                            <li className="text-gray-800 hover:text-gray-500 duration-150"> <a href="./hakkimizda">Hakkımızda</a> </li>
+                            <li className="text-gray-800 hover:text-gray-500 duration-150"> <a href="./ekatalog">E-Katalog</a> </li>
+                            <li className="text-gray-800 hover:text-gray-500 duration-150"> <a href="./iletisim">İletişim</a> </li>
+                               
+                            
                         </ul>
                     </div>
                     
