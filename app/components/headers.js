@@ -16,10 +16,10 @@ const Headers = () => {
 
     // Replace javascript:void(0) paths with your paths
     const navigation = [
-        { title: "Ansayfa", path: "./" },
-        { title: "Hakkımızda", path: "./hakkimizda" },
-        { title: "E-Katalog", path: "./ekatalog" },
-        { title: "İletişim", path: "./iletisim" }
+        { title: "Ansayfa",  path: "./" ,},
+        { title: "Hakkımızda",  path: "./hakkimizda" ,},
+        { title: "E-Katalog", path: "./ekatalog",  download:"newax_2023_catalog.pdf",},
+        { title: "İletişim",  path: "./iletisim", }
     ]
 
     useEffect(() => {
@@ -66,7 +66,7 @@ return (
                         navigation.map((item, idx) => {
                             return (
                                 <li key={idx} className="text-gray-700 hover:font-semibold">
-                                    <a href={item.path} className="block">
+                                    <a href={item.path} download={item.download} className="block">
                                         {item.title}
                                     </a>
                                 </li>
