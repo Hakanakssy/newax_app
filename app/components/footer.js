@@ -3,6 +3,7 @@ import Image from 'next/image';
 import logo from "../../public/Images/newax_black.png";
 
 
+
 const Footer = () => {
     return (
         <footer className="pt-10">
@@ -16,7 +17,7 @@ const Footer = () => {
                         <ul className="flex flex-wrap  gap-4 text-sm sm:text-base">
                             <li className="text-gray-800 hover:text-gray-500 duration-150"> <a href="./">Anasayfa</a> </li>
                             <li className="text-gray-800 hover:text-gray-500 duration-150"> <a href="./hakkimizda">Hakkımızda</a> </li>
-                            <li className="text-gray-800 hover:text-gray-500 duration-150"> <a href="./ekatalog" src="newax_2023_catalog.pdf" download>E-Katalog</a> </li>
+                            <li className="text-gray-800 hover:text-gray-500 duration-150"> <a href="newax_2023_catalog.pdf" download="newax_2023_catalog.pdf">E-Katalog</a> </li>
                             <li className="text-gray-800 hover:text-gray-500 duration-150"> <a href="./iletisim">İletişim</a> </li>
                                
                             
