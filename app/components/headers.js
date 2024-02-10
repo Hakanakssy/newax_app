@@ -18,7 +18,7 @@ const Headers = () => {
     const navigation = [
         { title: "Ansayfa",  path: "./" ,},
         { title: "Hakkımızda",  path: "./hakkimizda" ,},
-        { title: "E-Katalog", path: "./ekatalog",  download:"newax_2023_catalog.pdf",},
+        { title: "E-Katalog", path: "./ekatalog",  download:"newax_2023_catalog.pdf", source: "newax_2023_catalog.pdf"},
         { title: "İletişim",  path: "./iletisim", }
     ]
 
@@ -66,7 +66,7 @@ return (
                         navigation.map((item, idx) => {
                             return (
                                 <li key={idx} className="text-gray-700 hover:font-semibold">
-                                    <a href={item.path} download={item.download} className="block">
+                                    <a href={item.path} download={item.download} src={item.source} className="block">
                                         {item.title}
                                     </a>
                                 </li>
